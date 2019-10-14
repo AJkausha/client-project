@@ -1,0 +1,213 @@
+/* MAIN tAGS */
+
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+html {
+font-size: 18px;
+scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 1em;
+font-weight: 300;
+line-height: 1.5em;
+}
+
+/* NAVIGATION BAR */
+
+ul {
+list-style-type: none;
+padding: 0;
+overflow: hidden;
+background-color: lightseagreen;
+width: 900px;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.home) {
+background-color: pink;
+}
+
+
+/* HEADER TEXT */
+
+h1 {
+margin: 1.5em auto 2em auto;
+text-align: center;
+color: #ff80b3;
+font-size: 60px;
+font-weight: 900;
+font-style: italic;
+letter-spacing: 3px;
+text-shadow: 0 2px 2px black;
+}
+
+h3 {
+  color: black;
+  text-shadow: 1px 1px lightpink;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+ line-height: 40px;
+ font-family: cursive;
+}
+
+h4 {
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0 2px 2px black;
+  margin-bottom: 50px;
+}
+
+
+a {
+  color: #ff0066;
+  font-family: cursive;
+
+}
+/* HELPER CLASSES */
+
+.hero {
+  background-image: url("header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 6px;
+  opacity: 0.8;
+  object-fit: cover;
+  height: 900px;
+  }
+  
+  .logo {
+  width: 100px;
+  }
+  .home {
+  background-color: pink;
+  }
+
+  main {
+    margin-bottom : 3em;
+  }
+
+
+  .collections {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width : 40%;
+    min-height: 400px;
+    background-color: beige;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 100px;
+  }
+
+  .card-1 {
+    background-image: url("Macrame.jpeg");
+    margin-right: 5%;
+    border-radius: 6px;
+    border: 3px solid lightpink;
+
+    
+  }
+  .card-2 {
+    background-image: url("wool.jpg");
+    border-radius: 6px;
+    border: 3px solid lightpink;
+  }
+
+  .card-text {
+    background-color : white;
+    max-width: 400px;
+    width: 800px;
+    height: 300px;
+    opacity: .6;
+    padding: 5em;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  div.gallery {
+    margin: 6px;
+    float: left;
+    width: 300px;
+   
+  }
+  
+  
+  div.gallery img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 100px;
+  }
+
+  .all {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 5px 50px 0;
+    align-items: center;
+  }
+  
+  .all:hover {
+      opacity: 0.7;
+  }
+  
+  .all-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .all-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  
+  
+  .all-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .all-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+
+
+
