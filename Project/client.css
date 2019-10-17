@@ -64,13 +64,14 @@ background-color: whitesmoke;
 h1 {
 
 text-align: center;
-color: black;
+color: whitesmoke;
 font-size: 60px;
 font-weight: 900;
 font-style: italic;
 padding:50px;
 text-shadow: 0 2px 2px black;
 line-height: 50px;
+margin-top: 400px;
 }
 
 h3 {
@@ -94,18 +95,35 @@ h4 {
 a {
   color: skyblue;
   font-family: cursive;
-
 }
+
+p {
+  text-align: center;
+  text-shadow: black white;
+}
+
+
 /* HELPER CLASSES */
 
 
 .top {
     background-color: #bb0000;
-    background-image: linear-gradient( white, deepskyblue);
+    background-image: linear-gradient( white, #809fff);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 100px;
 }
 .hero {
-  padding: 30px;
+    margin-top: 30px;
+    background-image: url("home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px ;
+    
   
   }
 
@@ -153,14 +171,14 @@ a {
     background-image: url("pinkrose.jpg");
     margin-right: 5%;
     border-radius: 6px;
-    border: 3px solid deepskyblue;
+    border: 3px solid lightseagreen;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   }
   .card-2 {
     background-image: url("roses.jpg");
     border-radius: 6px;
-    border: 3px solid deepskyblue;
+    border: 3px solid lightseagreen;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -209,14 +227,15 @@ a {
 
   .social {
     background-color: #bb0000;
-    background-image: linear-gradient( white, black);
+    background-image: linear-gradient( white, #809fff);
     float: left;
     display: flex;
     width : 100%;
-    min-height: 10px;
+    min-height: 30px;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
   }
 
   .fa {
@@ -225,7 +244,6 @@ a {
     width: 50px;
     text-align: center;
     text-decoration: none;
-    margin-bottom: 50px;
     align-content: center;
   }
   
@@ -237,21 +255,24 @@ a {
     background: #3B5998;
     color: white;
     margin-left: 500px;
-    margin-top: 150px;
     margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
   }
   
   .fa-twitter {
     background: #55ACEE;
     color: white;
-    margin-top: 150px;
+    border: 2px solid white;
+    border-radius:50px;
     margin-right: 10px;
   }
   
   .fa-google {
     background: #dd4b39;
     color: white;
-    margin-top: 150px;
+    border: 2px solid white;
+    border-radius: 50px;
     margin-right: 10px;
   }
   
@@ -260,14 +281,16 @@ a {
   .fa-youtube {
     background: #bb0000;
     color: white;
-    margin-top: 150px;
+    border: 2px solid white;
+    border-radius:50px;
     margin-right: 10px;
   }
   
   .fa-instagram {
     background: #125688;
     color: white;
-    margin-top: 150px;
+    border: 2px solid white;
+    border-radius: 50px;
     margin-right: 10px;
   }
   
