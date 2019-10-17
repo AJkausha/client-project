@@ -18,10 +18,13 @@
 
     <section>
       <!--HEADER IMAGE-->
-      <div class="hero">
 
+      
+        <div class="top">
+          <a href="#"><img src="ammaya.png" class="logo"></a>
+        
         <!--LOGO IMAGE-->
-        <a href="#"><img src="client-logo.png" class="logo"></a>
+        
 
         <!--NAVIGATION BAR-->
         <ul style="float:right">
@@ -39,10 +42,22 @@
             </nav>
           <nav>
               <li style="float:right"><a href="#search">Search</a></li>
-          </nav>
-        </ul>
 
+          </nav>
+          
+        </ul>
       </div>
+
+      <section>
+        <div class="hero">
+        <img class="mySlides" src="home.jpg" style="width:100%" height="450px">
+        <img class="mySlides" src="header.jpg" style="width:100%" height= "450px">
+        <img class="mySlides" src="bed.jpg" style="width:100%" height= "450px">
+        </div>
+      </section>
+        
+
+      <h1 class="bold"> Style your Home</h1>
     </section>
   </header>
 
@@ -50,7 +65,7 @@
     <!--COLLECTIONS-->
 
     <!--HEADER TEXT-->
-    <h1 class="bold"> Style your Home</h1>
+    
 
     <section class="collections">
       
@@ -69,7 +84,7 @@
             <a href="#">Click more..</a>
           </div>
         </div>
-
+      
       
 
  
@@ -78,8 +93,9 @@
 
   <section>
 
-    <footer>
+    
       <h4>Dusty Modern</h4>
+      <div class="collage"> 
         <div class="gallery">
 
             <img src="tree.jpg">
@@ -101,16 +117,36 @@
             <img src="Wall.jpg">
         
         </div>
-        <br><br><br>
+      </div>
 
-        <a href="#" class="all all-facebook"></a>
-        <a href="#" class="all all-twitter"></a>
-        <a href="#" class="all all-google"></a>
-        <a href="#" class="all all-youtube"></a>
-        <a href="#" class="all all-instagram"></a>
-
+      <!-- <div class = "social"> -->
+        
+        <a href="https://www.facebook.com/" class="fa fa-facebook" target="new"></a>
+        <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="new"></a>
+        <a href="https://www.google.com/" class="fa fa-google" target="new"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube" target="new"></a>
+        <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" target="new"></a>
+      <!-- </div> -->
     </footer>
   </section>
+
+  <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
 </body>
 
 

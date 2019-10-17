@@ -1,5 +1,17 @@
-/* MAIN tAGS */
 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
+acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,
+sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,
+header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,
+video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,
+section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,
+q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+
+/* MAIN tAGS */
 html {
 box-sizing: border-box;
 }
@@ -24,10 +36,10 @@ line-height: 1.5em;
 
 ul {
 list-style-type: none;
-padding: 0;
+padding: 0px;
 overflow: hidden;
-background-color: lightseagreen;
-width: 900px;
+
+width: 500px;
 }
 
 li {
@@ -36,33 +48,34 @@ float: left;
 
 li a {
 display: block;
-color: white;
+color: black;
 text-align: center;
-padding: 14px 16px;
+padding: 25px 16px;
 text-decoration: none;
 }
 
 li a:hover:not(.home) {
-background-color: pink;
+background-color: whitesmoke;
 }
 
 
 /* HEADER TEXT */
 
 h1 {
-margin: 1.5em auto 2em auto;
+
 text-align: center;
-color: #ff80b3;
+color: black;
 font-size: 60px;
 font-weight: 900;
 font-style: italic;
-letter-spacing: 3px;
+padding:50px;
 text-shadow: 0 2px 2px black;
+line-height: 50px;
 }
 
 h3 {
   color: black;
-  text-shadow: 1px 1px lightpink;
+  text-shadow: 1px 1px lightseagreen;
   font-size: 30px;
   text-align: center;
   align-items: center;
@@ -79,29 +92,35 @@ h4 {
 
 
 a {
-  color: #ff0066;
+  color: skyblue;
   font-family: cursive;
 
 }
 /* HELPER CLASSES */
 
+
+.top {
+    background-color: #bb0000;
+    background-image: linear-gradient( white, deepskyblue);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .hero {
-  background-image: url("header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  border-radius: 6px;
-  opacity: 0.8;
-  object-fit: cover;
-  height: 900px;
+  padding: 30px;
+  
   }
+
+  
+  
+  
   
   .logo {
-  width: 100px;
+  width: 60px;
+  padding: 10px;
+  margin-top: 10px;
   }
   .home {
-  background-color: pink;
+  background-color: white;
+  padding: 25px;
   }
 
   main {
@@ -113,6 +132,8 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 40px;
+    
   }
   .card {
     width : 40%;
@@ -129,17 +150,18 @@ a {
   }
 
   .card-1 {
-    background-image: url("Macrame.jpeg");
+    background-image: url("pinkrose.jpg");
     margin-right: 5%;
     border-radius: 6px;
-    border: 3px solid lightpink;
-
+    border: 3px solid deepskyblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   }
   .card-2 {
-    background-image: url("wool.jpg");
+    background-image: url("roses.jpg");
     border-radius: 6px;
-    border: 3px solid lightpink;
+    border: 3px solid deepskyblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .card-text {
@@ -153,59 +175,100 @@ a {
     text-align: center;
   }
 
-  div.gallery {
-    margin: 6px;
+  .collage {
+    background-color: #bb0000;
+    background-image: linear-gradient( white, white);
     float: left;
-    width: 300px;
-   
+    display: flex;
+    width : 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scroll-padding-right: 20px;
+    margin-bottom: 70px;
+  }
+
+  
+
+  div.gallery {
+    display: flex;
+    float: left;
+    margin-right: 20px;
   }
   
   
   div.gallery img {
-    width: 100%;
+    width: 300px;
     height: 250px;
-    margin-bottom: 100px;
+    margin-left: 10px;
   }
 
-  .all {
-    padding: 20px;
+  .social {
+    background-color: #bb0000;
+    background-image: linear-gradient( white, black);
+    float: left;
+    display: flex;
+    width : 100%;
+    min-height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .fa {
+    float: left;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 10px 5px 50px 0;
-    align-items: center;
+    margin-bottom: 50px;
+    align-content: center;
   }
   
-  .all:hover {
+  .fa:hover {
       opacity: 0.7;
   }
   
-  .all-facebook {
+  .fa-facebook {
     background: #3B5998;
     color: white;
+    margin-left: 500px;
+    margin-top: 150px;
+    margin-right: 10px;
   }
   
-  .all-twitter {
+  .fa-twitter {
     background: #55ACEE;
     color: white;
+    margin-top: 150px;
+    margin-right: 10px;
   }
   
   .fa-google {
     background: #dd4b39;
     color: white;
+    margin-top: 150px;
+    margin-right: 10px;
   }
   
   
   
-  .all-youtube {
+  .fa-youtube {
     background: #bb0000;
     color: white;
+    margin-top: 150px;
+    margin-right: 10px;
   }
   
-  .all-instagram {
+  .fa-instagram {
     background: #125688;
     color: white;
+    margin-top: 150px;
+    margin-right: 10px;
   }
   
 
