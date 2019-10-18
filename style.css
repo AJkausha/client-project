@@ -64,14 +64,14 @@ background-color: whitesmoke;
 h1 {
 
 text-align: center;
-color: whitesmoke;
+color: black;
 font-size: 60px;
 font-weight: 900;
 font-style: italic;
 padding:50px;
-text-shadow: 0 2px 2px black;
+text-shadow: 0 2px 2px whitesmoke;
 line-height: 50px;
-margin-top: 400px;
+margin-top: 20px;
 }
 
 h3 {
@@ -113,7 +113,7 @@ p {
     min-width: 100px;
 }
 .hero {
-    /* margin-top: 30px; */
+    margin-top: 20px;
     background-image: url("home.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -151,7 +151,7 @@ p {
     display: flex;
     justify-content: center;
     padding: 40px;
-    margin-top: 200px;
+    margin-top: 50px;
     
   }
   .card {
@@ -165,7 +165,7 @@ p {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   .card-1 {
