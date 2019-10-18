@@ -107,7 +107,7 @@ p {
 
 
 .top {
-    background-color: #bb0000;
+    
     background-image: linear-gradient( white, #809fff);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-width: 100px;
@@ -151,6 +151,7 @@ p {
     display: flex;
     justify-content: center;
     padding: 40px;
+    margin-top: 200px;
     
   }
   .card {
@@ -164,21 +165,21 @@ p {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   .card-1 {
     background-image: url("pinkrose.jpg");
     margin-right: 5%;
     border-radius: 6px;
-    border: 3px solid lightseagreen;
+    border: 3px solid #809fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   }
   .card-2 {
     background-image: url("roses.jpg");
     border-radius: 6px;
-    border: 3px solid lightseagreen;
+    border: 3px solid #809fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
