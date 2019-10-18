@@ -113,7 +113,7 @@ p {
     min-width: 100px;
 }
 .hero {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-image: url("home.jpg");
     background-position: center;
     background-repeat: no-repeat;
