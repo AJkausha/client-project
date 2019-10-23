@@ -71,6 +71,7 @@ font-family: cursive;
 font-family: "playfair display", serif;
 }
 
+/* COLLECTION TEXT */
 h4 {
 text-align: center;
 font-size: 40px;
@@ -80,6 +81,7 @@ margin-bottom: 1em;
 margin-top: 0em;
 }
 
+/* NAVIGATION LINKS */
 a {
 color: black;
 font-family: cursive;
@@ -100,12 +102,13 @@ margin-bottom : 3em;
 
 /* HELPER CLASSES */
 
-/* HEADER TEXT */
+/* FREE TEXT */
 .cursive {
   font-family: snellroundhandw01-scrip, cursive;
   margin-bottom: .5em;
 }
 
+/* THIS WINTER TEXT */
 .cursive-2 {
   font-family: snellroundhandw01-scrip, cursive;
   text-align: left;
@@ -113,6 +116,7 @@ margin-bottom : 3em;
   margin-top: .5em;
 }
 
+/* HEADER TEXT */
 .font-1 {
   font: 'playfair display',serif;
   font-style: normal;
@@ -126,6 +130,7 @@ margin-bottom : 3em;
 
 }
 
+/* FRESH POSTERS TEXT */
 .font-2 {
   font: 'playfair display',serif;
   font-style: normal;
@@ -137,6 +142,7 @@ margin-bottom : 3em;
   margin-left: 1em;
 }
 
+/* SHOW MORE BUTTON */
 .showbtn {
   background-color: lightblue;
   border: none;
@@ -151,6 +157,7 @@ margin-bottom : 3em;
   cursor: pointer;
 }
 
+/* ADVENTURES TEXT */
 .yestxt {
   font-family: "playfair display", serif;
   text-align: left;
@@ -160,10 +167,12 @@ margin-bottom : 3em;
   font-weight: 300;
 }
 
+/* HEADER IMAGE, LOGO, NAVIGATION BAR */
 .top {
 background-color:( white);
 }
 
+/* HEADER TEXT DIV */
 .hero {
 width: 100%;
 background-image: url("baby.jpg");
@@ -177,17 +186,20 @@ height: 600px;
 margin-bottom: 3em;
 }
 
+/* LOGO IMAGE */
 .logo {
 width : 100px;
 padding-left: 10px;
 
 }
+
+/* NAVIGATION BAR HOME MENU */
 .home {
 color: lightpink;
 font-family: "playfair display", serif;
 }
 
-
+/* COLLECTION TWO IMAGES  AFTER THE BIG IMAGE*/
 .collections {
 width: 100%;
 display: flex;
@@ -195,6 +207,7 @@ justify-content: center;
 padding: 40px;
 }
 
+/* COLLECTIONS FIRST IMAGE DIV */
 .card {
 width : 40%;
 min-height: 400px;
@@ -208,15 +221,18 @@ align-items: center;
 margin-bottom: 100px;
 }
 
+/* COLLECTION FIRST IMAGE */
 .card-1 {
 background-image: url("wood.jpg");
 margin-right: 5%;
-
 }
+
+/* COLLECTION SECOND IMAGE */
 .card-2 {
 background-image: url("texture.jpg");
 }
 
+/* COLLECTION IAMGE TEXT */
 .card-text {
 background-color : white;
 max-width: 400px;
@@ -226,9 +242,9 @@ padding: 5em;
 text-align: center;
 margin-left: 1em;
 margin-right: 1em;
-
 }
 
+/* DUSTY MODERN TEXT */
 .dustytxt {
   margin-top: 6em;
   text-align: center;
@@ -254,13 +270,14 @@ scroll-padding-right: 20px;
 margin-bottom: 70px;
 }
 
+/* COLLECTION 2 WITH JAVA SCRIPT  FIRST ROW*/
 .collections2 {
   width: 100%;
   display: flex;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 
+/* BACKGROUND DIV BOX1 */
 .box1 {
   background-color: #ccffff;
   width: 400px;
@@ -268,6 +285,7 @@ margin-bottom: 70px;
   margin-top: 3em;
 }
 
+/* IMAGE 1 INSIDE THE DIV */
 .box1img {
   width: 300px;
   height: 400px;
@@ -276,14 +294,15 @@ margin-bottom: 70px;
   border: .3em solid white;
 }
 
+/* IMAGE 1 TEXT */
 .box1txt {
   font-family: "playfair display", serif;
   margin-top: .9em; 
   font-size: 1.5em;
 }
 
+/* IMAGE 1 SHOW MORE LINK */
 .box1a {
-  
   border: none;
   color: black;
   padding: .5em .5em .5em .5em;
@@ -295,6 +314,7 @@ margin-bottom: 70px;
   margin-left: 8.5em;
 }
 
+/* BACKGROUND DIV BOX2 */
 .box2 {
   background-color: white;
   width: 500px;
@@ -304,6 +324,7 @@ margin-bottom: 70px;
   
 }
 
+/* IMAGE 2 INSIDE THE DIV */
 .box2img {
   width: 300px;
   height: 400px;
@@ -313,6 +334,7 @@ margin-bottom: 70px;
   border: .3em solid white;
 }
 
+/* COLLECTIONS 3 NEXT ROW */
 .collections3 {
   width: 100%;
   display: flex;
@@ -320,6 +342,7 @@ margin-bottom: 70px;
   
 }
 
+/* BACKGROUND DIV BOX3 */
 .box3 {
   background-color: lightslategray;
   width: 400px;
@@ -328,6 +351,7 @@ margin-bottom: 70px;
   border: .3em solid black;
 }
 
+/* IMAGE 3 INSIDE THE DIV */
 .box3img {
   width: 300px;
   height: 400px;
@@ -336,12 +360,14 @@ margin-bottom: 70px;
   border: .3em solid white;
 }
 
+/* IMAGE 3 TEXT */
 .box3txt {
   font-family: "playfair display", serif;
   margin-top: .9em; 
   font-size: 1.5em;
 }
 
+/* IMAGE 3 SHOW MORE LINK */
 .box3a {
   
   border: none;
@@ -355,6 +381,7 @@ margin-bottom: 70px;
   margin-left: 8.5em;
 }
 
+/* BACKGROUND DIV BOX4 */
 .box4 {
   background-color: linen;
   width: 400px;
@@ -363,23 +390,24 @@ margin-bottom: 70px;
   
 }
 
+/* IMAGE 4 INSIDE THE DIV */
 .box4img {
   width: 300px;
   height: 400px;
   margin-top: 3em;
   margin-left: 2.8em;
   border: .3em solid white;
-  
 }
 
+/* IMAGE 4 TEXT */
 .box4txt {
   font-family: "playfair display", serif;
   margin-top: .9em; 
   font-size: 1.5em;
 }
 
+/* IMAGE 4 SHOW MORE LINK */
 .box4a {
-  
   border: none;
   color: black;
   padding: .5em .5em .5em .5em;
@@ -391,8 +419,7 @@ margin-bottom: 70px;
   margin-left: 8.5em;
 }
 
-
-
+/* LAST GALLERY IMAGES DIV BOX*/
 div.gallery {
 display: flex;
 float: left;
@@ -401,18 +428,20 @@ transition: .5s ease;
 opacity: 1;
 }
 
+/* LAST GALLERY IMAGES */
 div.gallery img {
 width: 300px;
 height: 250px;
 margin-left: 10px;
 }
 
+/* LAST GALLERY IMAGES HOVER */
 div.gallery :hover {
   opacity: 0.3;
   background-color: #292F2F;
 }
 
-
+/* SOCIAL MEDIA ICONS AND LINKS */
 .fa {
 padding:10px;
 font-size: 10px;
@@ -453,6 +482,7 @@ background:black;
 color: white;
 }
 
+/* COLLECTIONS IMAGES SLIDE SHOW WITH JAVA SCRIPT */
 .mySlides {display:none;
 width: 400px;
 height: 520px;;
@@ -461,25 +491,28 @@ margin-top: 1.5em;
 margin-bottom: 2em;
 }
 
+/* LAST SUBSCRIBE BUTTON */
 .subscribebtn {
-  background-color: #ffc2b3; 
-  border: none;
-  color: black;
-  padding: 13px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family:  "playfair display", serif;
+background-color: #ffc2b3; 
+border: none;
+color: black;
+padding: 13px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+font-family:  "playfair display", serif;
 }
 
+/* LAST SUBSCRIBE INPUT BOX AND BUTTON DIV BOX */
 .subscribe {
   padding: 3em;
   text-align: center;
 }
 
+/* /* LAST SUBSCRIBE INPUT BOX */
 .email {
   background-color: #f2f2f2;
   border: none;
@@ -492,12 +525,7 @@ margin-bottom: 2em;
   padding: 13px 30px;
 }
 
-.emailtxt {
-  font-family:  "playfair display", serif;
-  font-size: 20px;
-  padding: 1em;
-}
-
+/* LET'S CHAT BUTTON */
 .open-button {
   background-color:#ffcccc;
   font-family:  "playfair display", serif;
@@ -512,36 +540,41 @@ margin-bottom: 2em;
   width: 280px;
 }
 
+/* CHAT WINDOW BORDER */
 .chat-popup {
   display: none;
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: 3px solid whitesmoke;
   z-index: 9;
 }
 
+/* CHAT WINDOW BACKGROUND COLOR */
 .form-container {
   max-width: 300px;
   padding: 10px;
   background-color: white;
 }
 
+/* CHATTING AREA (Ask us any question) */
 .form-container textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background:#ffe6e6;
   resize: none;
   min-height: 200px;
 }
 
+/* CHATTING AREA (Ask us any question) WHEN CLICK COLOR WILL CHANGE */
 .form-container textarea:focus {
-  background-color: #ddd;
+  background-color: #ffe6f2;
   outline: none;
 }
 
+/* SEND BUTTON */
 .form-container .btn {
   background-color: #ffcccc;
   color: white;
@@ -553,14 +586,16 @@ margin-bottom: 2em;
   opacity: 0.8;
 }
 
+/* CANCEL BUTTON */
 .form-container .cancel {
   background-color: black;
 }
 
+/* CANCEL AND SEND BUTTON HOVER */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
 
-.chat {
-  background-color: #ffe6e6;
-}
+
+/* PROJECT HTML */
+
