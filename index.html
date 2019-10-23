@@ -103,34 +103,34 @@
           <p class="box1a"> Show more.. </p>
         </div>
 
-        <div class="box2">
-            <div class="w3-content w3-section">
-                <img class="mySlides" src="azalea.jpg" >
-                <img class="mySlides" src="plants.png" >
-                <img class="mySlides" src="vibes.jpeg">
-                <img class="mySlides" src="plant.jpg" alt="book">
-              </div>
-              
-            
-              </div>
+        <div class="box2" class="w3-content w3-section">
 
+          <img class="mySlides" src="azalea.png">
+          <img class="mySlides" src="plants.png">
+          <img class="mySlides" src="vibes.jpeg">
+          <img class="mySlides" src="plant.jpg" alt="book">
         </div>
+
+
+
+
       </div>
 
-        <div class="collections3">
-            <div class="box3">
-              <img class="box3img" src="enjoy.jpeg" alt="book">
-              <p class="box3txt">PRICKLY COLLECTIONS</p>
-              <p class="box3a"> Show more.. </p>
-            </div>
-          
-    
-            <div class="box4">
-              <img class="box4img" src="vibes.jpeg" alt="book">
-              <p class="box3txt">PRICKLY COLLECTIONS</p>
-              <p class="box3a"> Show more.. </p>
-            </div>
-          </div>
+
+      <div class="collections3">
+        <div class="box3">
+          <img class="box3img" src="enjoy.jpeg" alt="book">
+          <p class="box3txt">PRICKLY COLLECTIONS</p>
+          <p class="box3a"> Show more.. </p>
+        </div>
+
+
+        <div class="box4">
+          <img class="box4img" src="vibes.jpeg" alt="book">
+          <p class="box3txt">PRICKLY COLLECTIONS</p>
+          <p class="box3a"> Show more.. </p>
+        </div>
+      </div>
 
     </section2>
   </main>
@@ -155,7 +155,7 @@
 
         <div class="gallery">
 
-          <img src="furnitur.jpg">
+          <img src="leaf.jpg">
 
 
         </div>
@@ -166,6 +166,11 @@
         </div>
       </div>
 
+      <div class="subscribe"> 
+        <p class="emailtxt">Subscribe and stay on top of our latest news and Updates</p>
+      <input type="text" placeholder="Enter your email here" class="email">
+      <button class="subscribebtn"> Subscribe </button>
+    </div>
       <div class="social"></div>
 
       <a href="https://www.facebook.com/" class="fa fa-facebook" target="new"></a>
@@ -175,26 +180,50 @@
       <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" target="new"></a>
 
       </div>
-      <p>You are here All About DIY</p>
+      <button class="open-button" onclick="openForm()">Let's chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form  class="form-container">
+    
+
+    
+    <textarea placeholder="Ask us any question" name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+      <!-- <p>You are here All About DIY</p> -->
       </footer>
   </section>
 
   <script>
-      var myIndex = 0;
-      carousel();
-      
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 2000); // Change image every 2 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-      </script>
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+// CHATBOX
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  </script>
 </body>
 
 
