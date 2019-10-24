@@ -323,18 +323,31 @@ margin-bottom: 70px;
   margin-left: 10em;
   border: .3em solid black;
   margin-top: 0em;
-  
 }
 
+/* COLLECTIONS IMAGES SLIDE SHOW WITH JAVA SCRIPT */
+.mySlides {display:none;
+  width: 400px;
+  height: 520px;;
+  margin-left: 9em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  }
+
+  .txtandimg {
+    display: flex;
+    margin-left: 0em;
+  }
+
 /* IMAGE 2 INSIDE THE DIV */
-.box2img {
+/* .box2img {
   width: 300px;
   height: 400px;
   margin-top: 0em;
   margin-left: 10em;
   margin-bottom: 0em;
   border: .3em solid white;
-}
+} */
 
 /* COLLECTIONS 3 NEXT ROW */
 .collections3 {
@@ -487,14 +500,7 @@ background:black;
 color: white;
 }
 
-/* COLLECTIONS IMAGES SLIDE SHOW WITH JAVA SCRIPT */
-.mySlides {display:none;
-width: 400px;
-height: 520px;;
-margin-left: 9em;
-margin-top: 1.5em;
-margin-bottom: 2em;
-}
+
 
 /* LAST SUBSCRIBE BUTTON */
 .subscribebtn {
@@ -605,10 +611,7 @@ font-family:  "playfair display", serif;
   opacity: 1;
 }
 
-.txtandimg {
-  display: flex;
-  margin-left: 0em;
-}
+
 
 .txt {
   margin-right: 3em;
