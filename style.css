@@ -132,7 +132,6 @@ margin-bottom : 3em;
 
 /* FRESH POSTERS TEXT */
 .font-2 {
-  font: 'playfair display',serif;
   font-style: normal;
   font-weight: normal;
   font-size: 100px;
@@ -274,22 +273,23 @@ margin-bottom: 70px;
 .collections2 {
   width: 100%;
   display: flex;
-  justify-content: center; 
+  text-align: center;
 }
 
 /* BACKGROUND DIV BOX1 */
 .box1 {
   background-color: #ccffff;
-  width: 400px;
-  height: 550px;
-  margin-top: 3em;
+  width: 500px;
+  height: 600px;
+  margin-top: 0em;
+  margin-left: 3em;
 }
 
 /* IMAGE 1 INSIDE THE DIV */
 .box1img {
-  width: 300px;
+  width: 400px;
   height: 400px;
-  margin-top: 1em;
+  margin-top: 5em;
   margin-left: 2.8em;
   border: .3em solid whitesmoke;
 }
@@ -299,6 +299,7 @@ margin-bottom: 70px;
   font-family: "playfair display", serif;
   margin-top: .9em; 
   font-size: 1.5em;
+  text-align: center;
 }
 
 /* IMAGE 1 SHOW MORE LINK */
@@ -319,8 +320,9 @@ margin-bottom: 70px;
   background-color: white;
   width: 500px;
   height: 500px;
-  margin-left: 4em;
+  margin-left: 10em;
   border: .3em solid black;
+  margin-top: 0em;
   
 }
 
@@ -328,8 +330,8 @@ margin-bottom: 70px;
 .box2img {
   width: 300px;
   height: 400px;
-  margin-top: 2.5em;
-  margin-left: 5em;
+  margin-top: 0em;
+  margin-left: 10em;
   margin-bottom: 0em;
   border: .3em solid white;
 }
@@ -344,19 +346,21 @@ margin-bottom: 70px;
 
 /* BACKGROUND DIV BOX3 */
 .box3 {
-  background-color: white;
-  width: 400px;
-  height: 550px;
-  margin-top: 3em;
-  border: .3em solid black;
+  background-color: #ffeee6;
+  width: 500px;
+  height: 600px;
+  margin-top:10em ;
+  /* border: .3em solid whitesmoke; */
+  margin-left: 7em;
+  margin-right: 1em;
 }
 
 /* IMAGE 3 INSIDE THE DIV */
 .box3img {
-  width: 300px;
+  width: 400px;
   height: 400px;
-  margin-top: 1em;
-  margin-left: 2.8em;
+  margin-top: 3em;
+  margin-left: 3em;
   border: .3em solid whitesmoke;
 }
 
@@ -383,19 +387,20 @@ margin-bottom: 70px;
 
 /* BACKGROUND DIV BOX4 */
 .box4 {
-  background-color: linen;
-  width: 400px;
+  background-color: white;
+  width: 500px;
   height: 600px;
   margin-left: 4em;
+  border: .3em solid black;
   
 }
 
 /* IMAGE 4 INSIDE THE DIV */
 .box4img {
-  width: 300px;
+  width: 400px;
   height: 400px;
   margin-top: 3em;
-  margin-left: 2.8em;
+  margin-left: 2.5em;
   border: .3em solid white;
 }
 
@@ -525,6 +530,10 @@ font-family:  "playfair display", serif;
   padding: 13px 30px;
 }
 
+.subscribetxt {
+  padding: 1em;
+}
+
 /* LET'S CHAT BUTTON */
 .open-button {
   background-color:#ffcccc;
@@ -596,6 +605,13 @@ font-family:  "playfair display", serif;
   opacity: 1;
 }
 
+.txtandimg {
+  display: flex;
+  margin-left: 0em;
+}
 
+.txt {
+  margin-right: 3em;
+}
 /* PROJECT HTML */
 

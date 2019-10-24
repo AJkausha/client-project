@@ -91,10 +91,21 @@
     </section1>
 
     <section2>
-      <h2 class="font-2">Fresh <br>
-        Posters</h2>
-      <p class="cursive-2">This Winter</p>
-      <p class="yestxt">Say yes to new adventures!</p>
+
+      <div class="txtandimg">
+        <div>
+        <h2 class="font-2">Fresh<br>
+          Posters</h2>
+        <p class="cursive-2">This Winter</p>
+        <p class="yestxt">Say yes to new adventures!</p>
+      </div>
+        <div class="box2">
+          <img class="mySlides" src="azalea.png">
+          <img class="mySlides" src="plants.png">
+          <img class="mySlides" src="vibes.jpeg">
+          <img class="mySlides" src="plant.jpg" alt="book">
+        </div>
+      </div>
 
       <div class="collections2">
         <div class="box1">
@@ -102,35 +113,26 @@
           <p class="box1txt">PRICKLY COLLECTIONS</p>
           <p class="box1a"> Show more.. </p>
         </div>
-
-        <div class="box2" class="w3-content w3-section">
-
-          <img class="mySlides" src="azalea.png">
-          <img class="mySlides" src="plants.png">
-          <img class="mySlides" src="vibes.jpeg">
-          <img class="mySlides" src="plant.jpg" alt="book">
-        </div>
-
-
-
-
-      </div>
-
-
-      <div class="collections3">
-        <div class="box3">
-          <img class="box3img" src="enjoy.jpeg" alt="book">
-          <p class="box3txt">PRICKLY COLLECTIONS</p>
-          <p class="box3a"> Show more.. </p>
+          <div class="box3">
+              <img class="box3img" src="enjoy.jpeg" alt="book">
+              <p class="box3txt">PRICKLY COLLECTIONS</p>
+              <p class="box3a"> Show more.. </p>
+           
+          </div>
         </div>
 
 
         <div class="box4">
-          <img class="box4img" src="vibes.jpeg" alt="book">
-          <p class="box3txt">PRICKLY COLLECTIONS</p>
-          <p class="box3a"> Show more.. </p>
+            <img class="box4img" src="vibes.jpeg" alt="book">
+            <p class="box1txt">PRICKLY COLLECTIONS</p>
+          <p class="box1a"> Show more.. </p>
         </div>
-      </div>
+      
+        
+
+
+        
+      
 
     </section2>
   </main>
@@ -138,7 +140,7 @@
   <section>
 
 
-    <p class="dustytxt">Dusty Modern</p>
+    <p class="dustytxt">#Dusty Modern</p>
     <article>
 
       <div class="collage">
@@ -166,11 +168,11 @@
         </div>
       </div>
 
-      <div class="subscribe"> 
-        <p class="emailtxt">Subscribe and stay on top of our latest news and Updates</p>
-      <input type="text" placeholder="Enter your email here" class="email">
-      <button class="subscribebtn"> Subscribe </button>
-    </div>
+      <div class="subscribe">
+        <p class="subscribetxt">Subscribe and stay on top of our latest news and Updates</p>
+        <input type="text" placeholder="Enter your email here" class="email">
+        <button class="subscribebtn"> Subscribe </button>
+      </div>
       <div class="social"></div>
 
       <a href="https://www.facebook.com/" class="fa fa-facebook" target="new"></a>
@@ -182,20 +184,24 @@
       </div>
       <button class="open-button" onclick="openForm()">Let's chat</button>
 
-<div class="chat-popup" id="myForm">
-  <form  class="form-container">
-    
-
-    
-    <textarea placeholder="Ask us any question" name="msg" required></textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+      <div class="chat-popup" id="myForm">
+        <form class="form-container">
 
 
-      <p>You are here All About DIY</p>
+
+          <textarea placeholder="Ask us any question" name="msg" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <p class="subscribetxt">&copy; 2019 AJS Kaushalya All Rights Reserved</p>
+
+
+
+
+
       </footer>
   </section>
 
@@ -215,14 +221,14 @@
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
 
-// CHATBOX
+    // CHATBOX
     function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+      document.getElementById("myForm").style.display = "block";
+    }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
   </script>
 </body>
 
