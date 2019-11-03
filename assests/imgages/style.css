@@ -32,32 +32,57 @@ line-height: 1.5em;
 }
 
 /* NAVIGATION BAR */
+
+.row {
+display: flex;
+justify-content:space-between; /* Horizontal alignment*/
+align-items: center; /*Vertical of the elements*/
+}
+
 ul {
-list-style-type: none;
-padding: 10px;
-overflow: hidden;
-overflow: hidden;
-}
+  display: block;
 
+}
+nav {
+    height: inherit;
+    line-height: inherit;
+    position: absolute;
+    right: 0.75em;
+    top: 0;
+    vertical-align: middle;
+
+}
 li {
-float: left;
+  width: 100px; 
+  font-size: 20px;
+  transition: color .3s;
 }
 
-li a {
-display: block;
-color: black;
-text-align: center;
-padding: 25px 16px;
-text-decoration: none;
-font-family: "playfair display", serif;
-margin-right: 10px;
-width: 100px;;
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "playfair display", serif;
+}
+
+a:hover {
+  color:pink;
+}
+.deco-nav {
+  background-color: white;
+  width: 1264px;
+  height: 100px;
+  display: flex;
+  position: fixed;
+}
+
+li a.active {
+  color: pink;
 }
 
 
-li a:hover:not(.home) {
-background-color: whitesmoke;
-}
+.font400 {
+  font-weight: 400;
+  }
 
 
 
@@ -83,11 +108,6 @@ margin-top: 0em;
 }
 
 /* NAVIGATION LINKS */
-a {
-color: black;
-font-family: cursive;
-
-}
 
 p {
 text-align: center;
@@ -97,7 +117,8 @@ font-family:'playfair display',serif;
 
 
 main {
-margin-bottom : 3em;
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 
@@ -168,9 +189,7 @@ margin-bottom : 3em;
 }
 
 /* HEADER IMAGE, LOGO, NAVIGATION BAR */
-.top {
-background-color:( white);
-}
+
 
 /* HEADER TEXT DIV */
 .hero {
@@ -194,10 +213,6 @@ padding-left: 10px;
 }
 
 /* NAVIGATION BAR HOME MENU */
-.home {
-color: lightpink;
-font-family: "playfair display", serif;
-}
 
 /* COLLECTION TWO IMAGES  AFTER THE BIG IMAGE*/
 .collections {
@@ -397,10 +412,6 @@ margin-bottom: 70px;
   
 }
 
-
-
-
-
 /* LAST GALLERY IMAGES DIV BOX*/
 div.gallery {
 display: flex;
@@ -575,10 +586,103 @@ font-family:  "playfair display", serif;
   opacity: 1;
 }
 
-
-
 .txt {
   margin-right: 3em;
 }
-/* PROJECT HTML */
 
+
+/* Gallery Ammaya  */
+
+h2.galHead {
+font-size: 30px;
+color: #FCB08C;
+}
+
+.galHead2 {
+  color: black;
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+ img {
+   width:300px;
+ }
+
+ .method {
+   text-align: left;
+   font-size: 1.2em;
+   margin-bottom: 2em;
+   text-align: justify;
+ }
+
+ .para {
+   color: #FCB08C;
+ }
+ .method2{
+   margin-left: 5em;
+   text-align: left;
+   font-family: "playfair display", serif;
+   text-align: justify;
+ }
+
+ /* contact html page */
+ .contact {
+   background-color: white;
+   border: 4px double #d0ebe5;
+   width: 1000px;
+   height: 1300px;
+   margin-bottom: 2em;
+ }
+.contactHeader {
+  border-bottom: 1px solid #d0ebe5;
+  font-size: 30px;
+  padding: 1em
+}
+
+.contactimg {
+  margin-top: 5em;
+  margin-left: 19em;
+  margin-bottom: 3em;
+  align-content: center
+}
+.designTxt {
+    font-family: "playfair display", serif;
+    font-size: 52px;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 1em;
+}
+input.msg[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "playfair display", serif;
+}
+
+input[type=submit] {
+  background-color: #FCB08C;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "playfair display", serif;
+}
+
+input[type=submit]:hover {
+  background-color: #FCB08C;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  font-family: "playfair display", serif;
+  margin-top: 2em;
+}
