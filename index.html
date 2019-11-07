@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>&#9819; Ammaya Crafts</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -115,22 +116,23 @@
 
         <!-- IMAGE 1 -->
         <div class="gallery">
-          <img src="scent.jpg">
+        <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="baby.jpg"><img src="baby.jpg" alt="Rusty"></a>
+
         </div>
 
         <!-- IMAGE 2 -->
         <div class="gallery">
-          <img src="flowers.jpg">
+          <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="flowers.jpg"><img src="flowers.jpg" alt="Flower Vase"></a>
         </div>
 
         <!-- IMAGE 3 -->
         <div class="gallery">
-          <img src="hand-labor.jpg">
+            <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="hand-labor.jpg"><img src="hand-labor.jpg" alt="Flower Vase"></a>
         </div>
 
         <!-- IMAGE 4 -->
         <div class="gallery">
-          <img src="staging.jpg">
+          <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="staging.jpg"><img src="staging.jpg" alt="Flower Vase"></a>
         </div>
       </div>
 
@@ -194,6 +196,10 @@
       document.getElementById("myForm").style.display = "none";
     }
   </script>
+    <script src ="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="app.js"></script>
+  
 </body>
 
 
