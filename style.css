@@ -30,15 +30,11 @@ font-size: 1em;
 font-weight: 300;
 line-height: 1.5em;
 }
-
-/* NAVIGATION BAR */
-
-.row {
-display: flex;
-justify-content:space-between; /* Horizontal alignment*/
-align-items: center; /*Vertical of the elements*/
+main {
+	max-width: 1024px;
+  margin: 0 auto;
 }
-
+/* NAVIGATION BAR */
 ul {
   display: block;
 
@@ -83,8 +79,11 @@ li a.active {
 .font400 {
   font-weight: 400;
   }
-
-
+.row {
+display: flex;
+justify-content:space-between; /* Horizontal alignment*/
+align-items: center; /*Vertical of the elements*/
+    }
 
 h3 {
 color: black;
@@ -115,11 +114,6 @@ text-shadow: black white;
 font-family:'playfair display',serif;
 }
 
-
-main {
-	max-width: 1024px;
-	margin: 0 auto;
-}
 
 
 /* HELPER CLASSES */
@@ -194,7 +188,7 @@ main {
 /* HEADER TEXT DIV */
 .hero {
 width: 100%;
-background-image: url("baby.jpg");
+background-image: url("john-mark-.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -295,10 +289,10 @@ margin-bottom: 70px;
 /* BACKGROUND DIV BOX1 */
 .box1 {
   background-color: #ccffff;
-  width: 500px;
+  width: 700px;
   height: 600px;
   margin-top: 0em;
-  margin-left: 3em;
+  margin-left: 0em;
 }
 
 /* IMAGE 1 INSIDE THE DIV */
@@ -322,17 +316,16 @@ margin-bottom: 70px;
 /* BACKGROUND DIV BOX3 */
 .box3 {
   background-color: #ffeee6;
-  width: 500px;
+  width: 700px;
   height: 600px;
-  margin-top:15em ;
+  margin-top:13em ;
   /* border: .3em solid whitesmoke; */
-  margin-left: 7em;
-  margin-right: 1em;
+  margin-left: 10em;
 }
 
 /* IMAGE 3 INSIDE THE DIV */
 .box3img {
-  width: 400px;
+  width: 300px;
   height: 400px;
   margin-top: 3em;
   margin-left: 0em;
@@ -591,7 +584,7 @@ font-family:  "playfair display", serif;
 }
 
 
-/* Gallery Ammaya  */
+/* Project Ammaya  */
 
 h2.galHead {
 font-size: 30px;
@@ -605,8 +598,9 @@ color: #FCB08C;
   margin-bottom: 1em;
   text-align: left;
 }
- img {
+ img.project {
    width:300px;
+   height: 500px;
  }
 
  .method {
@@ -614,6 +608,8 @@ color: #FCB08C;
    font-size: 1.2em;
    margin-bottom: 2em;
    text-align: justify;
+   margin-left: 2em;
+   margin-top: 3em;
  }
 
  .para {
@@ -626,6 +622,9 @@ color: #FCB08C;
    text-align: justify;
  }
 
+  .sentenceImg {
+    display: flex;
+  }
  /* contact html page */
  .contact {
    background-color: white;
