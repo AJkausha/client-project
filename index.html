@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,31 +12,37 @@
 </head>
 
 <body>
-    
-  <header class="header-editor">
-      <div class="deco-nav">
-        <img src="logo.png" alt="logo" class="logo">
-      <nav class="row">
-        <ul class="row font400" >
-          <li><a href="index.html"class="active">Home</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
 
-        </ul>
-      </nav>
-    </div>
-      
-    </header>
+  <header class="top-header row" id="top-header">
+    <figure id="logo" class="font700">
+      <img src="logo.png" alt="logo" class="logo">
+    </figure>
 
-      <!-- THE HEADER IMAGE AND THE H1 TEXT -->
-      <div class="hero">
-        <h1 class="font-1">
-          Everything <br>for a <br>#Homemadeby<br>you
-        </h1>
-      </div>
-    </section>
+    <figure id="nav-triggers">
+      <a href="#" id="open-menu" class="trigger"><img src="burger-icon.svg" alt="Burger menu"></a>
+      <a href="#" id="close-menu" class="trigger"><img src="close-icon.svg" alt="Close menu"></a>
+    </figure>
+
+    <nav id="main-nav">
+      <ul class="menu row font400">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- THE HEADER IMAGE AND THE H1 TEXT -->
+  <div class="hero">
+    <h1 class="font-1">
+      Everything <br>for a <br>#Homemadeby<br>you
+    </h1>
+  </div>
+  </section>
   </header>
 
   <main>
@@ -116,23 +123,26 @@
 
         <!-- IMAGE 1 -->
         <div class="gallery">
-        <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="baby.jpg"><img src="baby.jpg" alt="Rusty"></a>
+          <a data-fancybox="gallery" data-caption="Scent Bottle" href="baby.jpg"><img src="baby.jpg" alt="Rusty"></a>
 
         </div>
 
         <!-- IMAGE 2 -->
         <div class="gallery">
-          <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="flowers.jpg"><img src="flowers.jpg" alt="Flower Vase"></a>
+          <a data-fancybox="gallery" data-caption="Scent Bottle" href="flowers.jpg"><img src="flowers.jpg"
+              alt="Flower Vase"></a>
         </div>
 
         <!-- IMAGE 3 -->
         <div class="gallery">
-            <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="hand-labor.jpg"><img src="hand-labor.jpg" alt="Flower Vase"></a>
+          <a data-fancybox="gallery" data-caption="Scent Bottle" href="hand-labor.jpg"><img src="hand-labor.jpg"
+              alt="Flower Vase"></a>
         </div>
 
         <!-- IMAGE 4 -->
         <div class="gallery">
-          <a data-fancybox="gallery" data-caption ="Scent Bottle"  href="staging.jpg"><img src="staging.jpg" alt="Flower Vase"></a>
+          <a data-fancybox="gallery" data-caption="Scent Bottle" href="staging.jpg"><img src="staging.jpg"
+              alt="Flower Vase"></a>
         </div>
       </div>
 
@@ -171,6 +181,8 @@
 
 
   <!-- MY SLIDESHOW PHOTO COLLECTIONS JAVASCRIPT -->
+
+ 
   <script>
     var myIndex = 0;
     carousel();
@@ -195,11 +207,13 @@
     function closeForm() {
       document.getElementById("myForm").style.display = "none";
     }
+
   </script>
-    <script src ="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="app.js"></script>
-  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="app.js"></script>
+
+
 </body>
 
 
