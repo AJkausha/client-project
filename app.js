@@ -18,6 +18,8 @@ $(function () {
    loop:true,
    animationEffect: "zoom",
    animationDuration: 366,
+   preload: true
   });
 
 });
+
