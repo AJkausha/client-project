@@ -14,9 +14,11 @@
 <body>
 
   <header class="top-header row" id="top-header">
-    <figure id="logo" class="font700">
+
+    <figure id="logo">
       <img src="logo.png" alt="logo" class="logo">
     </figure>
+
 
     <figure id="nav-triggers">
       <a href="#" id="open-menu" class="trigger"><img src="burger-icon.svg" alt="Burger menu"></a>
@@ -33,7 +35,7 @@
 
       </ul>
     </nav>
-
+   
   </header>
 
   <!-- THE HEADER IMAGE AND THE H1 TEXT -->
@@ -43,7 +45,7 @@
     </h1>
   </div>
   </section>
-  </header>
+ 
 
   <main>
     <!--COLLECTIONS-->
@@ -111,7 +113,7 @@
         <p class="box-a"> Show more.. </p>
       </div>
     </section2>
-  </main>
+  
 
   <footer>
     <section3>
@@ -145,7 +147,7 @@
               alt="Flower Vase"></a>
         </div>
       </div>
-
+    </main>
       <!-- THE SUBSCRIBE BUTTON, INPUT TEXT BOT AND THE SUBSCRIBE PARAGRAPH -->
       <div class="subscribe">
         <p class="subscribetxt">Have more creative ideas delivered straight to your inbox by subscribing below!</p>
@@ -154,7 +156,7 @@
       </div>
 
       <!-- FOLLOWING THIS AMMAYA CRAFTS PAGE SOCIAL MEDIA PAGES -->
-      <div class="social">
+      <div class="icon-social">
         <a href="https://www.facebook.com/" class="fa fa-facebook" target="new"></a>
         <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="new"></a>
         <a href="https://www.google.com/" class="fa fa-google" target="new"></a>
@@ -178,37 +180,32 @@
 
     </section3>
   </footer>
+  <!-- MY SLIDESHOW PHOTO COLLECTIONS JAVASCRIPT  -->
+<script>
+   var myIndex = 0;
+  carousel();
 
-
-  <!-- MY SLIDESHOW PHOTO COLLECTIONS JAVASCRIPT -->
-
- 
-  <script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) { myIndex = 1 }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
     }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
 
-    // CHATBOX
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
+  // CHATBOX
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
 
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-
-  </script>
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="app.js"></script>
