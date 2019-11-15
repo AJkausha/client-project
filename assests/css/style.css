@@ -190,7 +190,7 @@ font-weight: 300;
 /* HEADER TEXT DIV */
 .hero {
 width: 100%;
-background-image: url("john-mark-.jpg");
+background-image: url("/assests/images/john-mark-.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -234,13 +234,13 @@ margin-bottom: 100px;
 
 /* COLLECTION FIRST IMAGE */
 .card-1 {
-background-image: url("tiles.jpg");
+background-image: url("/assests/images/tiles.jpg");
 margin-right: 5%;
 }
 
 /* COLLECTION SECOND IMAGE */
 .card-2 {
-background-image: url("water.jpg");
+background-image: url("/assests/images/water.jpg");
 }
 
 /* COLLECTION IAMGE TEXT */
@@ -596,5 +596,91 @@ opacity: 1;
 margin-right: 3em;
 }
 
+#nav-triggers {
+display: none;
+}
+/* Media Queries
+===================================================================================*/
+/*#region Media Queries*/
 
-/* Project Ammaya  */
+@media (max-width:800px){
+	/* Helper Classes */
+	.row:not(.top-header) {
+		display: block;
+	}
+	/* LOGO */
+	#logo {
+		position: relative;
+		z-index: 1;
+		color: white;
+	}
+/*Hide the Nav*/
+#main-nav {
+display: none;
+}
+/*Nav Triggers*/
+#nav-triggers {
+display: block;
+width: 44px;
+height: 44px;
+position: relative;
+overflow: hidden;
+/* background-color: orange; */
+z-index: 1;
+
+}
+.trigger {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.trigger img{
+	width: 60%;	
+}
+/* when menu is closed */
+#close-menu{
+	left: -100%;
+}
+/* When menu is open */
+.menu-is-open #open-menu {
+  left: -100%;
+}
+.menu-is-open #close-menu {
+	left: 0;
+}
+/* MOBILE NAV */
+.menu-is-open {
+	overflow: hidden;
+}
+.menu-is-open #main-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba( 0,0,0,.6);
+	width: 100vw;
+	height: 100vh;
+}
+.menu {
+	text-align: center;
+	font-size: 8vw;
+}
+.menu li {
+	color: #999999;
+	margin: 0 0 2em 0;
+}
+.menu li:last-child {
+	margin: 0;
+}
+.menu li.active {
+	color: white;
+	border: 0;
+}
+}
