@@ -35,7 +35,7 @@
 
       </ul>
     </nav>
-   
+
   </header>
 
   <!-- THE HEADER IMAGE AND THE H1 TEXT -->
@@ -45,11 +45,11 @@
     </h1>
   </div>
   </section>
- 
+
 
   <main>
     <!--COLLECTIONS-->
-    <section1 class="collections">
+    <section class="collections">
       <!-- Happy Girly Crafty Background Image and the text  -->
       <div class="card card-1">
         <div class="card-text">
@@ -67,10 +67,10 @@
           <a href="#" class="showbtn">Click here for more about me..</a>
         </div>
       </div>
-    </section1>
+    </section>
 
 
-    <section2>
+    <section>
       <!-- THE FIRST ROW FRESH POSTERS TEXT AND THESLIDESHOW IMAGE COLLECTIONS -->
       <div class="txtAndImg">
         <div>
@@ -113,63 +113,64 @@
         <p class="box-a"> Show more.. </p>
       </div>
     </section2>
-  
 
-  <footer>
-    <section3>
-      <!-- THE DUSTY MODERN TEXT -->
-      <p class="dustytxt">#Dusty Modern</p>
 
-      <!-- THE LAST IMAGE COLLECTIONS UNDER THE DUSTY MODERN TEXT -->
-      <div class="collage">
+    <footer>
+      <section>
+        <!-- THE DUSTY MODERN TEXT -->
+        <p class="dustytxt">#Dusty Modern</p>
 
-        <!-- IMAGE 1 -->
-        <div class="gallery">
-          <a data-fancybox="gallery" data-caption="Scent Bottle" href="baby.jpg"><img src="baby.jpg" alt="Rusty"></a>
+        <!-- THE LAST IMAGE COLLECTIONS UNDER THE DUSTY MODERN TEXT -->
+        <div class="collage">
 
+          <!-- IMAGE 1 -->
+          <div class="gallery">
+            <a data-fancybox="gallery" data-caption="Scent Bottle" href="baby.jpg"><img src="baby.jpg" alt="Rusty"></a>
+
+          </div>
+
+          <!-- IMAGE 2 -->
+          <div class="gallery">
+            <a data-fancybox="gallery" data-caption="Scent Bottle" href="flowers.jpg"><img src="flowers.jpg"
+                alt="Flower Vase"></a>
+          </div>
+
+          <!-- IMAGE 3 -->
+          <div class="gallery">
+            <a data-fancybox="gallery" data-caption="Scent Bottle" href="hand-labor.jpg"><img src="hand-labor.jpg"
+                alt="Flower Vase"></a>
+          </div>
+
+          <!-- IMAGE 4 -->
+          <div class="gallery">
+            <a data-fancybox="gallery" data-caption="Scent Bottle" href="staging.jpg"><img src="staging.jpg"
+                alt="Flower Vase"></a>
+          </div>
         </div>
+      </main>
+  <!-- THE SUBSCRIBE BUTTON, INPUT TEXT BOT AND THE SUBSCRIBE PARAGRAPH -->
+  <div class="subscribe">
+    <p class="subscribetxt">Have more creative ideas delivered straight to your inbox by subscribing below!</p>
+    <input type="text" placeholder="Enter your email here" class="email">
+    <button class="subscribebtn"> Subscribe </button>
+  </div>
 
-        <!-- IMAGE 2 -->
-        <div class="gallery">
-          <a data-fancybox="gallery" data-caption="Scent Bottle" href="flowers.jpg"><img src="flowers.jpg"
-              alt="Flower Vase"></a>
-        </div>
+  <!-- FOLLOWING THIS AMMAYA CRAFTS PAGE SOCIAL MEDIA PAGES -->
+  <div class="icon-social">
+    <a href="https://www.facebook.com/" class="fa fa-facebook" target="new"></a>
+    <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="new"></a>
+    <a href="https://www.google.com/" class="fa fa-google" target="new"></a>
+    <a href="https://www.youtube.com/" class="fa fa-youtube" target="new"></a>
+    <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" target="new"></a>
+  </div>
 
-        <!-- IMAGE 3 -->
-        <div class="gallery">
-          <a data-fancybox="gallery" data-caption="Scent Bottle" href="hand-labor.jpg"><img src="hand-labor.jpg"
-              alt="Flower Vase"></a>
-        </div>
-
-        <!-- IMAGE 4 -->
-        <div class="gallery">
-          <a data-fancybox="gallery" data-caption="Scent Bottle" href="staging.jpg"><img src="staging.jpg"
-              alt="Flower Vase"></a>
-        </div>
-      </div>
-    </main>
-      <!-- THE SUBSCRIBE BUTTON, INPUT TEXT BOT AND THE SUBSCRIBE PARAGRAPH -->
-      <div class="subscribe">
-        <p class="subscribetxt">Have more creative ideas delivered straight to your inbox by subscribing below!</p>
-        <input type="text" placeholder="Enter your email here" class="email">
-        <button class="subscribebtn"> Subscribe </button>
-      </div>
-
-      <!-- FOLLOWING THIS AMMAYA CRAFTS PAGE SOCIAL MEDIA PAGES -->
-      <div class="icon-social">
-        <a href="https://www.facebook.com/" class="fa fa-facebook" target="new"></a>
-        <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="new"></a>
-        <a href="https://www.google.com/" class="fa fa-google" target="new"></a>
-        <a href="https://www.youtube.com/" class="fa fa-youtube" target="new"></a>
-        <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" target="new"></a>
-      </div>
+  <button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
-  <form  class="form-container">
-    
+  <form action="/action_page.php" class="form-container">
 
-    
-    <textarea placeholder="Ask us any question" name="msg" required></textarea>
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
 
     <button type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
@@ -177,8 +178,8 @@
 </div>
 
 
-      <!-- <p>You are here All About DIY</p> -->
-      </footer>
+  <!-- <p>You are here All About DIY</p> -->
+  </footer>
   </section>
 
   <script>
@@ -197,14 +198,14 @@
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
 
-// CHATBOX
+    // CHATBOX
     function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+      document.getElementById("myForm").style.display = "block";
+    }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
   </script>
 </body>
 
