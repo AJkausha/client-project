@@ -315,6 +315,12 @@ margin-left: 10em;
 margin-top: 0em;
 }
 
+.border2 {
+  width : 200px;
+  height: 200px;
+
+}
+
 /* BACKGROUND DIV BOX3 */
 .box3 {
 background-color: #ffeee6;
@@ -671,7 +677,7 @@ resize: vertical;
 font-family: "playfair display", serif;
 }
 
-input[type=submit] {
+.chatPopup{
 background-color: #FCB08C;
 color: white;
 padding: 12px 20px;
