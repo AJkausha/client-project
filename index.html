@@ -164,55 +164,48 @@
         <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" target="new"></a>
       </div>
 
-      <!-- THE CHAT BOX  -->
-      <button class="open-button" onclick="openForm()">Let's Chat</button>
-
 <div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-s
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+  <form  class="form-container">
+    
+
+    
+    <textarea placeholder="Ask us any question" name="msg" required></textarea>
 
     <button type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
 
-      <!-- THE COPY RIGHT TEXT -->
-      <p class="subscribetxt">&copy; 2019 AJS Kaushalya All Rights Reserved</p>
 
-    </section3>
-  </footer>
-  <!-- MY SLIDESHOW PHOTO COLLECTIONS JAVASCRIPT  -->
-<script>
-   var myIndex = 0;
-  carousel();
+      <!-- <p>You are here All About DIY</p> -->
+      </footer>
+  </section>
 
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
     }
-    myIndex++;
-    if (myIndex > x.length) { myIndex = 1 }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
 
-  // CHATBOX
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
+// CHATBOX
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-</script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"> </script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="app.js"></script>
-
-
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  </script>
 </body>
 
 
