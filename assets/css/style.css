@@ -338,7 +338,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 600px;
   margin-bottom: 3em;
