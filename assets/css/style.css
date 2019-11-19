@@ -385,7 +385,7 @@ p {
 /* COLLECTION FIRST IMAGE */
 
 .card-1 {
-  background-image: url("../assets/images/tiles.jpg");
+  background-image: url("../images/tiles.jpg");
   margin-right: 5%;
 }
 
@@ -393,7 +393,7 @@ p {
 /* COLLECTION SECOND IMAGE */
 
 .card-2 {
-  background-image: url("../assets/images/water.jpg");
+  background-image: url("../images/water.jpg");
 }
 
 
